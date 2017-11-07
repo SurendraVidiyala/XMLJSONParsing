@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://java/exercise/xsd/Customer/"
+	xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://java/exercise/xsd/Customer/"
+	xmlns:pref="http://java/exercise/xsd/Address/">
+
+	<import schemaLocation="Address.xsd" namespace="http://java/exercise/xsd/Address/"></import>
+	<complexType name="Customer">
+		<sequence>
+			<element name="customerId" type="int"></element>
+			<element name="name" type="string"></element>
+			<element name="dateOfBirth" type="date"></element>
+			<element name="annualSalary" type="float"></element>
+			<element name="addresses" type="pref:Address" minOccurs="1" maxOccurs="unbounded"></element>
+			<element name="payment" type="tns:PaymentMethod" minOccurs="1" maxOccurs="unbounded"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="PaymentMethod">
+		<sequence>
+			<element name="cardNo" type="string"></element>
+			<element name="cardName" type="string"></element>
+			<element name="dateFrom" type="date"></element>
+			<element name="dateType" type="date"></element>
+			<element name="cardType">
+				<simpleType>
+					<restriction base="string">
+						<enumeration value="DEBITCARD"></enumeration>
+						<enumeration value="CREDITCARD"></enumeration>
+					</restriction>
+				</simpleType>
+			</element>
+		</sequence>
+	</complexType>
+
+    <element name="Customer" type="tns:Customer"></element>
+</schema>

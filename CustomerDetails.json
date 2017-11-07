@@ -1,0 +1,21 @@
+{
+  "customerId" : 101,
+  "name" : "Suren",
+  "dateOfBirth" : 1510038458044,
+  "annualSalary" : 10000.0,
+  "addresses" : [ {
+    "aptNo" : "134",
+    "streetNo" : "1300",
+    "streetName" : "1 Prairie Place",
+    "city" : "Bloomington",
+    "state" : "illinois",
+    "zip" : "60484"
+  } ],
+  "payment" : [ {
+    "cardNo" : "5896-4325-9875-2112",
+    "cardName" : "Suren",
+    "dateFrom" : null,
+    "dateType" : null,
+    "cardType" : "CARDTYPE1"
+  } ]
+}

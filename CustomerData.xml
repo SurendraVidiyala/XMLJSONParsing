@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:customer xmlns:ns2="http://java/exercise/xsd/Customer/">
+    <customerId>101</customerId>
+    <name>Suren</name>
+    <dateOfBirth>2017-11-07-06:00</dateOfBirth>
+    <annualSalary>10000.0</annualSalary>
+    <addresses>
+        <aptNo>134</aptNo>
+        <streetNo>1300</streetNo>
+        <streetName>1 Prairie Place</streetName>
+        <city>Bloomington</city>
+        <state>illinois</state>
+        <zip>60484</zip>
+    </addresses>
+    <payment>
+        <cardNo>5896-4325-9875-2112</cardNo>
+        <cardName>Suren</cardName>
+        <cardType>CARDTYPE1</cardType>
+    </payment>
+</ns2:customer>
